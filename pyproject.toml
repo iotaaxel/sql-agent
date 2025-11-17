@@ -54,7 +54,8 @@ Repository = "https://github.com/yourusername/sql-agent"
 Issues = "https://github.com/yourusername/sql-agent/issues"
 
 [tool.setuptools]
-packages = ["src"]
+packages = {find = {}}
+package-dir = {"" = "."}
 
 [tool.black]
 line-length = 100

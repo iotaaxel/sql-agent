@@ -14,6 +14,9 @@ setup-db: ## Initialize sample database
 	sqlite3 data/sample.db < data/schema.sql
 	@echo "Database initialized!"
 
+verify: ## Verify setup
+	python setup_verify.py
+
 test: ## Run tests
 	pytest tests/ -v
 
